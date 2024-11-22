@@ -4,7 +4,7 @@ This is Sphinx Doc Project which generates Web App for Revs Tech Doc.
 
 Revs Tech Doc is live [here](https://revs-tech-docs.netlify.app)
 
-# Python Installation
+# How to set up this project on your local machine?
 
 1. Install Python3.
 2. Pip also installed along with Python3.
