@@ -1,6 +1,8 @@
 # Sphinx-Revs-Tech-Docs
 
-This is Sphinx Doc Project for Revs Tech Doc.
+This is Sphinx Doc Project which generates Web App for Revs Tech Doc.
+
+Revs Tech Doc is live [here](https://revs-tech-docs.netlify.app)
 
 # Python Installation
 
