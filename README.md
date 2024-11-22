@@ -2,7 +2,7 @@
 
 This is Sphinx Doc Project which generates Web App for Revs Tech Doc.
 
-Revs Tech Doc is live [here](https://revs-tech-docs.netlify.app)
+Revs Tech Doc is live [here](https://revs-tech-docs.netlify.app).
 
 ## How to set up this project on your local machine?
 
