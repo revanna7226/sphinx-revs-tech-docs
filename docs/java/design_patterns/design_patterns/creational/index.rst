@@ -5,3 +5,6 @@ Creational Design Patterns
     :maxdepth: 10
 
     builder
+    factory
+    prototype
+    singleton

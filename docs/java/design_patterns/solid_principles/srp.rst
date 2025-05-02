@@ -7,25 +7,23 @@ Class should have one reason to change or should have one single responsibility.
 
 .. code-block:: java
 
-    package com.activemesa.solid.srp;
+    package com.revs.solidprinciples;
 
     import java.io.*;
     import java.net.URL;
     import java.util.ArrayList;
     import java.util.List;
 
-    import static java.lang.System.out;
-
-    class Journal{
+    class Journal {
         private final List<String> entries = new ArrayList<>();
 
         private static int count = 0;
 
-        public void addEntry(String text){
+        public void addEntry(String text) {
             entries.add("" + (++count) + ": " + text);
         }
 
-        public void removeEntry(int index){
+        public void removeEntry(int index) {
             entries.remove(index);
         }
 
@@ -36,32 +34,34 @@ Class should have one reason to change or should have one single responsibility.
 
         // here we break SRP
         public void save(String filename) throws Exception {
-            try (PrintStream out = new PrintStream(filename))
-            {
-            out.println(toString());
+            try (PrintStream out = new PrintStream(filename)) {
+                out.println(toString());
             }
         }
 
-        public void load(String filename) {}
-        public void load(URL url) {}
+        public void load(String filename) {
+        }
+
+        public void load(URL url) {
+        }
     }
 
     // handles the responsibility of persisting objects
-    class Persistence
-    {
-        public void saveToFile(Journal journal, String filename, boolean overwrite) throws Exception{
-            if (overwrite || new File(filename).exists())
-            try (PrintStream out = new PrintStream(filename)) {
+    class Persistence {
+        public void saveToFile(Journal journal, String filename, boolean overwrite) throws Exception {
+            if (overwrite || new File(filename).exists()) try (PrintStream out = new PrintStream(filename)) {
                 out.println(journal.toString());
             }
         }
 
-        public void load(Journal journal, String filename) {}
-        public void load(Journal journal, URL url) {}
+        public void load(Journal journal, String filename) {
+        }
+
+        public void load(Journal journal, URL url) {
+        }
     }
 
-    class SRPDemo
-    {
+    class SRP {
         public static void main(String[] args) throws Exception {
             Journal j = new Journal();
             j.addEntry("I cried today");
