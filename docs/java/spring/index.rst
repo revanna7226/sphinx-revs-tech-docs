@@ -6,4 +6,5 @@ Spring Framework
    :caption: Topics 
    
    data_jpa/index
+   security/index
 
