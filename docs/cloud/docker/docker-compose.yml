@@ -1,0 +1,44 @@
+name: mysql-database # name of docker-compose file
+version: "3" # version of docker-compose file
+
+services:
+  product-service:
+    container_name: product-app
+    image: revannarsn/product-app:1.0
+    restart: on-failure
+    environment:
+      WAIT-HOSTS: mysql:3306
+    ports:
+      - 10666:9090
+    depends_on:
+      - mysql-db-service
+      - coupon-service
+  coupon-service:
+    container_name: coupon-app
+    image: revannarsn/coupon-app:1.0
+    restart: on-failure
+    environment:
+      WAIT-HOSTS: mysql:3306
+    ports:
+      - 10555:9091
+    depends_on:
+      - mysql-db-service
+  mysql-db-service: # name of service
+    container_name: docker-mysql-db # name of container
+    image: mysql:latest # mysql image
+    restart: always # restarts container if it crashes
+    environment:
+      MYSQL_DATABASE: mydb
+      MYSQL_USER: myuser
+      MYSQL_PASSWORD: mypassword
+      MYSQL_ROOT_HOST: "%" # % means any ip can connect to db
+    ports:
+      - 6677:3306
+    volumes:
+      - ./sql-data:/docker-entrypoint-initdb.d # runs any .sql present inside sql-data folder
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "127.0.0.1"] # runs mysqladmin ping -h 127.0.0.1 command to check if db is running
+      interval: 4s # checks every 4 seconds if db is running
+      timeout: 20s # times out after 20 seconds if db is not running
+      retries: 5 # retries 5 times if db is not running
+
