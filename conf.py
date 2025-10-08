@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'My Tech Notes'
+project = 'Revs Tech Notes'
 copyright = '2024, Revannaswamy N'
 author = 'Revannaswamy N'
 release = '1.0'
@@ -16,7 +16,8 @@ release = '1.0'
 
 extensions = ['sphinx_rtd_theme',
               'sphinx_copybutton',
-              'sphinx_code_tabs',]
+              'sphinx_code_tabs',
+              'rst2pdf.pdfbuilder']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -35,6 +36,12 @@ html_theme_options = {
     'navigation_depth': 10,
     'titles_only': False
 }
+
+latex_engine = 'pdflatex'   # or 'xelatex'/'lualatex' if you need Unicode fonts
+latex_documents = [
+    ('index', 'MyProject.tex', 'MyProject Documentation',
+     'Your Name', 'manual'),
+]
 
 
 html_static_path = ['_static']

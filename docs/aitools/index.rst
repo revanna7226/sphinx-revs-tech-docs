@@ -1,4 +1,4 @@
-Database
+AI Tools
 ========
 
 .. toctree::
@@ -6,6 +6,6 @@ Database
    :caption: Contents
 
    introduction
-   mysql/introduction
-
-
+   cline
+   geminicodeassist
+   githubcopilot
