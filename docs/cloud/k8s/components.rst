@@ -1,5 +1,5 @@
-K8s Commands
-==========================
+K8s commands:
+==============
 
 .. code-block:: bash
 
