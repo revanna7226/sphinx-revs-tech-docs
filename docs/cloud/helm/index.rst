@@ -1,5 +1,5 @@
-Kubernetes
-========================
+Helm Charts
+==================
 
 .. list-table:: Course Details
    :widths: 25 25 25 25
@@ -8,18 +8,16 @@ Kubernetes
    * - Udemy Course
      - Instructor
      - Github
-     - Docker Hub Username
-   * - `Master Docker , Kubernetes, Maven, Jenkins ,GIT , AWS EC2 ,Elastic Beanstalk,ELB,Auto Scaling and more in easy steps <https://www.udemy.com/course/devops-tools-and-aws-for-java-microservice-developers>`_
+     - Discord
+   * - `Helm Kubernetes Packaging Manager for Developers and DevOps <https://www.udemy.com/course/helm-kubernetes-packaging-manager-for-developers-and-devops>`_
      - `Bharath Thippireddy <https://cognizant.udemy.com/user/bharaththippireddy>`_
      - `GitHub Code Resource <https://github.com/bharaththippireddy/devopsandawsformicroservicedevelopers>`_
      - revannarsn
 
+`Helm Documentation <https://helm.sh/docs/>`_
+
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 10
    :caption: Contents
 
    introduction
-   configs
-   dashboard-web
-   components_commands
-   components
