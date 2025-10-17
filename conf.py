@@ -7,7 +7,7 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Revs Tech Notes'
-copyright = '2024, Revannaswamy N'
+copyright = '2025, Revannaswamy N'
 author = 'Revannaswamy N'
 release = '1.0'
 
