@@ -24,8 +24,7 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-html_logo = "_static/revs.png"
-html_favicon = "_static/favicon.png"
+
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': False,
@@ -38,11 +37,12 @@ html_theme_options = {
     'titles_only': False,
     'style_nav_header_background': "#007bff",
     'style_external_links': True,
-    'style_nav_links': True,
-    'page_width': '1000px',
+    'style_nav_links': True
+
 }
 
 html_static_path = ['_static']
-
+html_logo = "_static/images/logo/revs-logo-h.png"
+html_favicon = "_static/images/logo/favicon.png"
 def setup(app):
     app.add_css_file('css/custom.css')
