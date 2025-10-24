@@ -6,7 +6,7 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Revs Tech Notes'
+project = 'Revs Tech Handbook'
 copyright = '2025, Revannaswamy N'
 author = 'Revannaswamy N'
 release = '1.0'
@@ -22,27 +22,25 @@ extensions = ['sphinx_rtd_theme',
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
-
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
+html_logo = "_static/revs.png"
+html_favicon = "_static/favicon.png"
 html_theme = 'sphinx_rtd_theme'
 html_theme_options = {
     'logo_only': False,
     'collapse_navigation': True,
     'sticky_navigation': True,
+    'display_version': True,
+    'prev_next_buttons_location': 'both',
     'includehidden': True,
     'navigation_depth': 10,
-    'titles_only': False
+    'titles_only': False,
+    'style_nav_header_background': "#007bff",
+    'style_external_links': True,
+    'style_nav_links': True,
+    'page_width': '1000px',
 }
-
-latex_engine = 'pdflatex'   # or 'xelatex'/'lualatex' if you need Unicode fonts
-latex_documents = [
-    ('index', 'MyProject.tex', 'MyProject Documentation',
-     'Your Name', 'manual'),
-]
-
 
 html_static_path = ['_static']
 
