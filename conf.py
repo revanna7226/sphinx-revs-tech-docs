@@ -17,7 +17,8 @@ release = '1.0'
 extensions = ['sphinx_rtd_theme',
               'sphinx_copybutton',
               'sphinx_code_tabs',
-              'rst2pdf.pdfbuilder']
+              'rst2pdf.pdfbuilder',
+              'sphinxcontrib.youtube']
 
 templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
@@ -30,15 +31,11 @@ html_theme_options = {
     'logo_only': False,
     'collapse_navigation': True,
     'sticky_navigation': True,
-    'display_version': True,
     'prev_next_buttons_location': 'both',
     'includehidden': True,
     'navigation_depth': 10,
     'titles_only': False,
-    'style_nav_header_background': "#007bff",
     'style_external_links': True,
-    'style_nav_links': True
-
 }
 
 html_static_path = ['_static']
