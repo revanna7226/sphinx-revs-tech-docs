@@ -113,6 +113,8 @@ Introduction:
             // Getters and Setters
         }
 
+    Generated Tables in the database is as follows,        
+
     .. code-block:: sql
 
         CREATE TABLE `department` (
