@@ -1,0 +1,15 @@
+sphinx
+sphinx_rtd_theme
+sphinx_code_tabs
+sphinx_copybutton
+sphinx-tabs
+recommonmark
+nbsphinx
+sphinx-markdown-tables
+pandoc
+sphinx-reredirects
+sphinxcontrib.asciinema
+sphinxemoji
+sphinx-autobuild
+sphinx-multiversion
+sphinxcontrib.youtube

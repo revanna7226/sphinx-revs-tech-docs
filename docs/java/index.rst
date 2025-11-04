@@ -14,6 +14,7 @@ Java
    spring/index
    reactive_programming/index
    testing/index
+   dsa-leetcode/index
 
 Reference Links:
     - `Coding Shuttle Handbooks <https://www.codingshuttle.com/handbooks/>`_
