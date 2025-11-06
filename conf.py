@@ -24,7 +24,7 @@ extensions = [
               ]
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
-    'logo_only': False,
+    # 'logo_only': False,
     'collapse_navigation': True,
     # 'sticky_navigation': True,
     # 'prev_next_buttons_location': 'both',
@@ -32,7 +32,7 @@ html_theme_options = {
     'navigation_depth': 10,
     # 'titles_only': False,
     # 'style_external_links': True,
-    "use_sourcelink": True,
+    # "use_sourcelink": True,
     "use_download_button": False,
 }
 source_suffix = {
