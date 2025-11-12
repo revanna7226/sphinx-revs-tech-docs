@@ -1,10 +1,6 @@
 # Binary Tree
 
-Nice — let’s cover binary trees thoroughly and practically: what they are, types, common operations, traversal algorithms (recursive & iterative), a Binary Search Tree (BST) implementation (insert/search/delete), time/space complexity, and some common pitfalls. I’ll include ready-to-run Java code you can paste into a file.
-
----
-
-# 1) What is a Binary Tree?
+## 1) What is a Binary Tree?
 
 A **binary tree** is a hierarchical data structure where each node has at most **two children**: commonly named `left` and `right`.
 It’s used in many algorithms: expression trees, heaps, BSTs, segment trees, tries (variant), etc.
@@ -20,7 +16,7 @@ Important properties:
 
 ---
 
-# 2) Basic Node & Tree classes
+## 2) Basic Node & Tree classes
 
 ```java
 public class BinaryTree {
@@ -38,9 +34,9 @@ public class BinaryTree {
 
 ---
 
-# 3) Traversals
+## 3) Traversals
 
-## Recursive traversals (Preorder, Inorder, Postorder)
+### Recursive traversals (Preorder, Inorder, Postorder)
 
 ```java
 // Preorder: root, left, right
@@ -68,7 +64,7 @@ void postorder(Node node) {
 }
 ```
 
-## Iterative inorder (using stack)
+### Iterative inorder (using stack)
 
 ```java
 import java.util.Stack;
@@ -85,7 +81,7 @@ void inorderIterative(Node root) {
 }
 ```
 
-## Level-order (Breadth-first using queue)
+### Level-order (Breadth-first using queue)
 
 ```java
 import java.util.Queue;
@@ -106,9 +102,9 @@ void levelOrder(Node root) {
 
 ---
 
-# 4) Common operations & utilities
+## 4) Common operations & utilities
 
-## Height (depth) of tree (recursive)
+### Height (depth) of tree (recursive)
 
 ```java
 int height(Node node) {
@@ -117,7 +113,7 @@ int height(Node node) {
 }
 ```
 
-## Count nodes / count leaves (recursive)
+### Count nodes / count leaves (recursive)
 
 ```java
 int countNodes(Node node) {
@@ -134,11 +130,11 @@ int countLeaves(Node node) {
 
 ---
 
-# 5) Binary **Search** Tree (BST)
+## 5) Binary **Search** Tree (BST)
 
 A BST is a binary tree with ordering property: for any node `n`, all keys in `n.left` < `n.val` and all keys in `n.right` > `n.val` (commonly assuming no duplicates, or you define a tie rule).
 
-## BST node & operations: insert, search, delete
+### BST node & operations: insert, search, delete
 
 ```java
 public class BST {
@@ -220,7 +216,7 @@ tree.root = tree.delete(tree.root, 50); // delete root
 
 ---
 
-# 6) Time & Space Complexity (Big-O)
+## 6) Time & Space Complexity (Big-O)
 
 | Operation             | Binary Tree (general) |    BST (average) | BST (worst — skewed) |
 | --------------------- | --------------------: | ---------------: | -------------------: |
@@ -234,7 +230,7 @@ Space: recursion depth = O(h) where `h` is tree height; auxiliary structures for
 
 ---
 
-# 7) Full runnable example (combines many pieces)
+## 7) Full runnable example (combines many pieces)
 
 ```java
 import java.util.*;
@@ -301,7 +297,7 @@ Height: 3
 
 ---
 
-# 8) Tips & common pitfalls
+## 8) Tips & common pitfalls
 
 - Distinguish **binary tree** vs **binary search tree** — operations differ.
 - Recursive solutions are concise but watch recursion depth for skewed trees — convert to iterative if stack overflow risk.
@@ -311,7 +307,7 @@ Height: 3
 
 ---
 
-# 9) Practice problems
+## 9) Practice problems
 
 - Serialize / deserialize a binary tree.
 - Convert binary tree to its mirror.
