@@ -37,7 +37,8 @@ html_theme_options = {
     # 'titles_only': False,
     # 'style_external_links': True,
     # "use_sourcelink": True,
-    "use_download_button": False
+    "use_download_button": False,
+    "use_sidenotes": True,
 }
 source_suffix = {
     '.rst': 'restructuredtext',
