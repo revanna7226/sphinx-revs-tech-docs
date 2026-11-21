@@ -6,6 +6,9 @@
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
+import sys, os
+sys.path.insert(0, os.path.abspath('_ext'))
+
 project = 'Revs Tech Handbook'
 copyright = '2025, Revannaswamy N'
 author = 'Revannaswamy N'
@@ -20,7 +23,8 @@ extensions = [
               'sphinx_code_tabs',
               'sphinxcontrib.youtube',
               'myst_parser',
-              'sphinx_design'
+              'sphinx_design',
+              'pdf_embed',
               ]
 html_theme = 'sphinx_book_theme'
 html_theme_options = {
@@ -44,7 +48,7 @@ myst_enable_extensions = [
     "colon_fence",       # ::: fenced blocks
     # "deflist",           # definition lists
     # "html_admonition",   # ::: note / warning etc.
-    # "html_image",        # <img> tags
+    "html_image",        # <img> tags
     # "substitution",      # {{ variables }}
     # "tasklist",          # [ ] and [x] lists
     # "attrs_block",
@@ -67,7 +71,10 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 html_static_path = ['_static']
-html_logo = "_static/images/logo/revs-logo-h.png"
-html_favicon = "_static/images/logo/favicon.png"
+html_js_files = [
+    'js/pdfobject.min.js',
+]
+html_logo = "_static/images/logo/revs-logo-h3.png"
+html_favicon = "_static/images/logo/favicon3.png"
 def setup(app):
     app.add_css_file('css/custom.css')

@@ -104,3 +104,11 @@ Compose Microservices with Mysql DB
                 timeout: 20s # times out after 20 seconds if db is not running
                 retries: 5 # retries 5 times if db is not running
 
+
+.. bash::
+
+    # To start the services defined in the docker-compose.yml file, run:
+    docker-compose up -d
+
+    # To stop the services, run:
+    docker-compose down
