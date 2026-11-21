@@ -101,13 +101,11 @@
    :::{tab-item} iOS/Unix based Systems
 
    ```bash
-      # Build, publish site only; skip the Sphinx source push
-      ./publish.sh --message "Add Kubernetes chapter" --skipSphinxCommit true
+   ./publish.sh --message "Add Kubernetes chapter" --skipSphinxCommit skip
    ```
 
    ```bash
-      # Build, publish site, and push Sphinx source
-      ./publish.sh --message "Add Kubernetes chapter"
+   ./publish.sh --message "Add Kubernetes chapter"
    ```
 
    :::

@@ -25,7 +25,7 @@ done
 
 # Accepts: true / True / 1 / yes
 case "$(echo "$SKIP_SPHINX_COMMIT" | tr '[:upper:]' '[:lower:]')" in
-  true|1|yes) SKIP_SOURCE=true ;;
+  true|1|yes|skip) SKIP_SOURCE=true ;;
   *)          SKIP_SOURCE=false ;;
 esac
 
