@@ -95,8 +95,7 @@
 
    :::{note}
    :class: margin
-   pass "true" to skip pushing the Sphinx source
-   pass "false" to allow pushing the Sphinx source
+   pass "skip" to skip pushing the Sphinx source
    :::
 
    ::::{tab-set}
@@ -104,11 +103,11 @@
    :::{tab-item} iOS/Unix based Systems
 
    ```bash
-   .\publish.ps1 "Added Commands to automate build and publish" true
+   .\publish.ps1 "Added Commands to automate build and publish" skip
    ```
 
    ```bash
-   .\publish.ps1 "Added Commands to automate build and publish" false
+   .\publish.ps1 "Added Commands to automate build and publish"
    ```
 
    :::
@@ -116,11 +115,11 @@
    :::{tab-item} Windows
 
    ```bash
-   .\publish.ps1 "Added Commands to automate build and publish" true
+   .\publish.ps1 "Added Commands to automate build and publish" skip
    ```
 
    ```bash
-   .\publish.ps1 "Added Commands to automate build and publish" false
+   .\publish.ps1 "Added Commands to automate build and publish"
    ```
 
    :::
