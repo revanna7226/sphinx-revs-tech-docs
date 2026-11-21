@@ -13,7 +13,7 @@ $pagesBranch = "main"
 # -----------------------
 
 # Accepts: true / True / 1 / yes / $true
-$skipSource = $skipSphinxCommit -in @("true", "1", "yes", "")
+$skipSource = $skipSphinxCommit -in @("true", "1", "yes", "skip")
 
 function Commit-AndPush {
     param([string]$RepoPath, [string]$CommitMessage, [string]$Branch)
