@@ -89,6 +89,28 @@
 
 1. Open _build/html/index.html_ in your browser.
 
+1. Automate Sphinx Project build and push Sphinx Project and Revs Tech Handbook to Github.
+
+   ::::{tab-set}
+
+   :::{tab-item} iOS/Unix based Systems
+
+   ```bash
+   make html
+   ```
+
+   :::
+
+   :::{tab-item} Windows
+
+   ```bash
+   .\make.bat html
+   ```
+
+   :::
+
+   ::::
+
 :::{seealso}
 
 - [{book}theme](https://sphinx-book-theme.readthedocs.io/en/stable/tutorials/get-started.html)
