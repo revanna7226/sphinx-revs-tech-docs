@@ -91,8 +91,6 @@
 
 1. Automate Sphinx Project build and push Sphinx Project and Revs Tech Handbook to Github.
 
-   pass "true" to skip pushing the Sphinx source
-
    :::{note}
    :class: margin
    pass "skip" to skip pushing the Sphinx source
